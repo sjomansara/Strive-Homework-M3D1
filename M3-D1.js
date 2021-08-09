@@ -105,9 +105,9 @@ Create a function to calculate the sum of three elements of a given array of int
 */
 
 function sum3(array) {
-
+    return array[0] + array[1] + array[2]
 }
-
+console.log(sum3([11, 2, 3]))
 /*
 
 9)
