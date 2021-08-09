@@ -194,7 +194,7 @@ function greatestIndex(array) {
 
 /*
 14)
-// Create a function to get the largest even number from an array of integers.
+Create a function to get the largest even number from an array of integers.
 */
 
 function largestEvenNumber(array) {
