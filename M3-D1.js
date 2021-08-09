@@ -190,12 +190,26 @@ function greatestIndex(array) {
     return array.indexOf(largestNumber)
 }
 
-console.log(greatestIndex([5, 3, 11]))
+// console.log(greatestIndex([5, 3, 11]))
 
 /*
 14)
-
 // Create a function to get the largest even number from an array of integers.
+*/
+
+function largestEvenNumber(array) {
+    let evenArray = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+            evenArray.push(array[i])
+        }
+    }
+    let largestEvenInt = Math.max(...evenArray)
+    return largestEvenInt
+}
+
+// console.log(largestEvenNumber([15, 23, 32, 33, 11, 12, 6]))
+
 
 // 16)
 
