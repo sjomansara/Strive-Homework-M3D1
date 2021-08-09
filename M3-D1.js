@@ -29,7 +29,12 @@ function myFunction(a, b) {
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
 
-
+function removeCharacter(string, position) {
+    let array = string.split("")
+    array.splice(position, 1)
+    return array.join("")
+}
+// console.log(removeCharacter("kittycat", 5))
 
 /*
 
@@ -40,13 +45,27 @@ Create a function to remove a character at the specified position of a given str
 function findLargest(x, y, z) {
     return Math.max(x, y, z)
 }
-console.log(findLargest(5, 2, 3))
+// console.log(findLargest(5, 2, 3))
 
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
 
+function rangeChecker(x, y) {
+    if (x > 40 && x < 60) {
+        if (y > 40 && y < 60) {
+            return true
+        }
+    } else if (x > 70 && x <= 100) {
+        if (y > 70 && y <= 100) {
+            return true
+        } 
+    } else {
+        return false
+    }
+}
+console.log(rangeChecker(41, 50))
 /*
 6) 
 
