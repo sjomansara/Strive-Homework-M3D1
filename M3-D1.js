@@ -107,12 +107,21 @@ Create a function to calculate the sum of three elements of a given array of int
 function sum3(array) {
     return array[0] + array[1] + array[2]
 }
-console.log(sum3([11, 2, 3]))
-/*
 
+// console.log(sum3([11, 2, 3]))
+
+/*
 9)
 Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
+
+function testArray(array) {
+    if (array.includes(1) || array.includes(3)) {
+        return true
+    } else {
+        return false
+    }
+}
 
 /*
 
