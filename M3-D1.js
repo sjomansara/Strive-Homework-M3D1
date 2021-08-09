@@ -4,6 +4,16 @@
 Create a function to calculate the sum of the two given integers. If the two values are same, then returns triple their sum.
 */
 
+function sum(a, b) {
+    if (a === b) {
+        let sum = a + b 
+        return sum * 3
+    } else {
+        return a + b 
+    }
+}
+// console.log(sum(2, 2))
+
 /*
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
