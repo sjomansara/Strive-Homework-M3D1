@@ -210,10 +210,26 @@ function largestEvenNumber(array) {
 
 // console.log(largestEvenNumber([15, 23, 32, 33, 11, 12, 6]))
 
-
 // 16)
-
 // Create a function to check from two given integers, whether one is positive and another one is negative.
+
+function isEvenIsOdd(x, y) {
+    string = ""
+    if (x % 2 === 0) {
+        string += "x is even."
+    } else {
+        string += "x is odd."
+    }
+
+    if (y % 2 === 0) {
+        string += " y is even."
+    } else {
+        string += " y is odd."
+    }
+    return string
+}
+
+//console.log(isEvenIsOdd(2, 3))
 
 // 17)
 
