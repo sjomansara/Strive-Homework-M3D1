@@ -65,23 +65,48 @@ function rangeChecker(x, y) {
         return false
     }
 }
-console.log(rangeChecker(41, 50))
+// console.log(rangeChecker(41, 50))
+
 /*
 6) 
-
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
 
-/*
+function copyString(string, copies) {
+    newString = ""
+    for (let i = 0; i < copies; i++) {
+        newString += string
+        if (i !== copies - 1) {
+            newString += " "
+        }
+    }
+    return newString
+}
+// console.log(copyString("this", 5))
 
+/*
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
+
+function losOrNew(cityName) {
+    if (cityName.startsWith("New") || cityName.startsWith("Los")) {
+        return cityName
+    } else {
+        return ""
+    }
+}
+
+// console.log(losOrNew("New York"))
 
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
+
+function sum3(array) {
+
+}
 
 /*
 
