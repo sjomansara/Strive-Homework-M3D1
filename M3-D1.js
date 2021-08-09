@@ -29,11 +29,18 @@ function myFunction(a, b) {
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
 
+
+
 /*
 
 4)
  Create a function to find the largest of three given integers.
 */
+
+function findLargest(x, y, z) {
+    return Math.max(x, y, z)
+}
+console.log(findLargest(5, 2, 3))
 
 /*
 5)
