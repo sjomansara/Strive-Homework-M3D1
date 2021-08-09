@@ -139,9 +139,22 @@ function testArray2(array) {
 
 /*
 11)
-
 Create a function to find the longest string from a given array of strings.
+*/
 
+function findLongestString(array) {
+    let longestString = array.sort(
+        function (a, b) {
+            return b.length - a.length
+        }
+    )[0]
+
+    return longestString    
+}
+
+// console.log(findLongestString(["this", "that", "the other one", "aaaaaaaaaaaaaaaaaa"]))
+
+/*
 12)
 
 Create a function to find the types of a given angle.
