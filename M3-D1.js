@@ -122,13 +122,22 @@ function testArray(array) {
         return false
     }
 }
+// console.log(testArray([5, 3]))
 
 /*
-
 10)
-
 Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
+*/
 
+function testArray2(array) {
+    if (array.includes(1) || array.includes(3)) {
+        return false 
+    } else {
+        return true
+    }
+}
+
+/*
 11)
 
 Create a function to find the longest string from a given array of strings.
