@@ -177,47 +177,55 @@ function judgeAngle(angle) {
         return "Straight line"
     }
 }
-console.log(judgeAngle(180))
+
+// console.log(judgeAngle(180))
 
 /*
-
 13)
-
 Create a function to find the index of the greatest element of a given array of integers
+*/
 
+function greatestIndex(array) {
+    largestNumber = Math.max(...array)
+    return array.indexOf(largestNumber)
+}
+
+console.log(greatestIndex([5, 3, 11]))
+
+/*
 14)
 
-Create a function to get the largest even number from an array of integers.
+// Create a function to get the largest even number from an array of integers.
 
-16)
+// 16)
 
-Create a function to check from two given integers, whether one is positive and another one is negative.
+// Create a function to check from two given integers, whether one is positive and another one is negative.
 
-17)
+// 17)
 
-Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
+// Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
 
-18)
+// 18)
 
-Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+// Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 
-19)
+// 19)
 
-Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
+// Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
 
-If the number has 3 as a factor, output 'Diego'.
-If the number has 5 as a factor, output 'Riccardo'.
-If the number has 7 as a factor, output 'Stefano'.
-If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
-Examples
-28's factors are 1, 2, 4, 7, 14, 28.
-this would be a simple "Stefano".
-30's factors are 1, 2, 3, 5, 6, 10, 15, 30.
-this would be a "DiegoRiccardo".
-34 has four factors: 1, 2, 17, and 34.
-this would be "34".
+// If the number has 3 as a factor, output 'Diego'.
+// If the number has 5 as a factor, output 'Riccardo'.
+// If the number has 7 as a factor, output 'Stefano'.
+// If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
+// Examples
+// 28's factors are 1, 2, 4, 7, 14, 28.
+// this would be a simple "Stefano".
+// 30's factors are 1, 2, 3, 5, 6, 10, 15, 30.
+// this would be a "DiegoRiccardo".
+// 34 has four factors: 1, 2, 17, and 34.
+// this would be "34".
 
-20)
-Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
+// 20)
+// Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 
-*/
+// */
